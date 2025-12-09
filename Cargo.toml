@@ -2,6 +2,12 @@
 name = "vanillavillage"
 version = "0.1.0"
 edition = "2024"
+license = "MIT"
+repository = "https://github.com/dylanopen/vanillavillage"
+authors = ["dylancode <opendylan@proton.me"]
+categories = ["game", "simulation", "graphics"]
+keywords = ["game", "simulation", "build", "town", "city"]
+description = "Build a village and keep your villagers happy in this indie town-builder adventure game"
 
 [profile.dev]
 opt-level = 1

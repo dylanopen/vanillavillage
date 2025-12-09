@@ -39,9 +39,9 @@ fn move_camera(
         direction.x -= 1.0;
     }
     
-    let direction = direction.normalize_or_zero();
+    let normalized_direction = direction.normalize_or_zero();
     let speed = 10.0;
-    let velocity = direction * speed;
+    let velocity = normalized_direction * speed;
     let velocity3d = Vec3::new(velocity.x, velocity.y, 0.0);
     
     for mut camera in camera_query {
