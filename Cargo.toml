@@ -3,14 +3,6 @@ name = "vanillavillage"
 version = "0.1.0"
 edition = "2024"
 
-[dependencies.bevy]
-version = "0.17.2"
-features = ["dynamic_linking"]
-
-[dependencies.log]
-version = "0.4.28"
-features = ["max_level_debug", "release_max_level_warn"]
-
 [profile.dev]
 opt-level = 1
 
@@ -25,6 +17,18 @@ lto = "thin"
 inherits = "release"
 opt-level = "s"
 strip = "debuginfo"
+
+[dependencies.bevy]
+version = "0.17.3"
+default-features = true
+
+[dependencies.tracing]
+version = "0.1.43"
+default-features = false
+
+[dependencies.tracing-subscriber]
+version = "0.3.22"
+default-features = false
 
 #[target.x86_64-unknown-linux-gnu]
 #linker = "clang"
